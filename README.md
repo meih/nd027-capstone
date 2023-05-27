@@ -1,25 +1,25 @@
 # Exploring Tokyo subway transportation data
 
-Tokyo is a vibrant city where many people travel day and night every day. 13 different kinds of subway trains depart every few minutes at a peak time, and take passengers from town to town. Do they actually affect the population of each area? And how much would it be?
+Tokyo is a vibrant city where many people travel day and night every day. 13 different kinds of subway trains depart every few minutes during peak hours, and take passengers from town to town. Do they actually affect the population of each area? And how much would it be?
 
 ## Scope of the project
 <!-- Explain what you plan to do in the project in more detail. What data do you use? What is your end solution look like? What tools did you use? etc -->
 
 In this project, I will build an ETL pipeline to explore how people use subway trains and how it affects day/night population data of the city.
-To achieve this goal, I would like to have the following data:
+To achieve this goal, I decided to have the following data:
 
 - Population by area
 - List of stations
 - Timetables
 - Number of passengers at each station
 
-Population and stations need to be associated with area, and timetables and passenger data need to be associated with stations.
-Since timetables have a large amount of data, I have decided to use Spark to process them, and output parquet files to explore data, as they can be easily imported to other database or data warehouse later.
+Population and stations need to be associated with area in Tokyo, and timetables and passenger data need to be associated with stations.
+Since timetables have a large amount of data, I chose Spark to process them, and output parquet files to explore data, as they can be easily imported to other database or data warehouse later.
 
-#### Data description
+## Data description
 <!-- Describe the data sets you're using. Where did it come from? What type of information is included? -->
 
-## Datasets used
+### Datasets used
 
 Here is the list of datasets that I use in this project. Since two different organizations (Tokyo metro and Toei) run Tokyo subway trains, data files are separated by organizaton. In addition, supplemental data to correlate zip codes and addresses is also included.
 
@@ -31,106 +31,106 @@ Here is the list of datasets that I use in this project. Since two different org
 | Stations_metro.json | JSON | 6,166 | Public Transportation Open Data |
 | StationTimetable_toei.json | JSON | 1,024,605 | Public Transportation Open Data |
 | StationTimetable_metro.json | JSON | 1,431,441 | Public Transportation Open Data |
-| PassengerSurvey_toei.json | JSON |  | Public Transportation Open Data |
-| PassengerSurvey_metro.json | JSON |  | Public Transportation Open Data |
+| PassengerSurvey_toei.json | JSON | 4,405 | Public Transportation Open Data |
+| PassengerSurvey_metro.json | JSON | 6,103 | Public Transportation Open Data |
 | DynamicPopulation.csv | CSV | 80 | Tokyo Open Data |
+    
+### Data Dictionary
 
-## Data Dictionary
+I have created four tables out of the datasets:
 
 - `Stations`: Master table of subway stations
 - `Timetables`: Timetable data for each subway station
 - `Populations`: Population data for each 
-- `StationUsage`: Daily usage statistics for each station
+- `PassengerSurvey`: Daily usage statistics for each station
 
 `Stations`, `Timetables`, `Poplulations` tables represents themselves as dimension tables.
 
-StationUsage table is a fact table that shows daily usage of the station.
-This table has `area_code` and `station_id` to join with `Stations` and `Populations` tables accordingly.
+`PassengerSurvey` table is a fact table that shows daily usage of the station.
+This table has `station_id` to join with `Stations`.
 
 ### Stations
 
 | Column | Description |
 |---|---|
-| station_id | |
-| zip_code | |
-| area_code | |
-| station_code | |
-| survey_id | |
-| station_name | |
+| station_id | Unique ID for the station |
+| area_code | Area code |
+| station_code | Station code |
+| station_name | Name of the station |
 
 ### Timetables
 
 | Column | Description |
 |---|---|
-| timetable_id | |
-| station_id | |
-| railway_id | |
-| calendar_type | |
-| train_type | |
-| train_number | |
-| departure_time | |
+| timetable_id | Unique ID for the timetable |
+| station_id | Station ID |
+| calendar_type | Calendar type (i.e. Weekday/Holiday) |
+| train_type | Train type (i.e. Local/Express) |
+| departure_time | Departure time of the train |
 
 ### Population
 
 | Column | Description |
 |---|---|
-| area_code | |
-| area_name | |
-| area_name_ja | |
-| daytime_population | |
-| population | |
+| area_code | Unique code for the area in Tokyo |
+| area_name | Area name in English |
+| area_name_ja | Area name in Japanese |
+| population | Population |
+| daytime_population | Population during daytime |
 
 ### PassengerSurvey
 
 | Column | Description |
 |---|---|
-| usage_id | |
-| station_id | |
-| railway_id | |
-| area_code | |
-| survey_id | |
-| year | |
-| passengers | |
+| id | Unique ID for the survet result |
+| survey_id | Survey ID |
+| station_id | Station ID |
+| area_code | Area code |
+| year | Year the survey was conducted |
+| passengers | Number of passengers |
 
 
 ```mermaid
 erDiagram
 
-StationUsage ||--o{ Stations: ""
-StationUsage ||--o{ StationTimeTables: ""
-StationUsage ||--o{ DynamicPopulation: ""
+Stations ||--o{ PassengerSurvey: ""
+Stations ||--o{ Timetables: ""
+Population ||--o{ Stations: ""
 
-StationUsage {
-  string StationCode
-	string RegionCode
-  number PassengersGettingOnTrains
-  number PassengersGettingOnTrainsWithCommuterPass
-  number PassengersGettingOffTrains
-  number PassengersGettingOffTrainsWithCommuterPass
+PassengerSurvey {
+  string id
+  string survey_id
+  string station_id
+  number year
+  number passengers
 }
 
 Stations {
-	string StationCode
-	string StationName
-  string StationAddress
-  string RailWay
+  string station_id
+  string area_code
+  string station_code
+  string survey_id
+  string station_name
 }
 
-StationTimeTables {
-	string StationCode
-	string StationName
-  string RailWay
-  datetime Time
+Population {
+  string area_code
+  string area_name
+  string area_name_ja
+  number population
+  number daytime_population
 }
 
-DynamicPopulation {
-	string RegionCode
-  string RegionName
-  number DayTimePopulationM
-  number DayTimePopulationF
-  number ResidentPopulationM
-  number ResidentPopulationF
+Timetables {
+  string id
+  string station_id
+  string calendar_type
+  string train_type
+  string train_number
+  string departure_time
 }
+
+
 ```
 
 It’s possible that we will need to address the following issues in the future. Each of them can be addressed differently:
