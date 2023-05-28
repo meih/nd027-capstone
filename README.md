@@ -16,6 +16,21 @@ To achieve this goal, I decided to have the following data:
 Population and stations need to be associated with area in Tokyo, and timetables and passenger data need to be associated with stations.
 Since timetables have a large amount of data, I chose Spark to process them, and output parquet files to explore data, as they can be easily imported to other database or data warehouse later.
 
+## How this project is structured
+
+- etl/
+  - etl.py : The main ETL script. It builds data models from the datasets and save them into parquet files
+  - helpers.py : File paths and data checks
+  - config.ini : Definition and files and directories used
+- data/ : Directory for datasets to be processed
+- parquet/ : Directory for parquet files
+
+To run the ETL script, run the following command:
+
+```
+python etl.py
+```
+
 ## Data description
 <!-- Describe the data sets you're using. Where did it come from? What type of information is included? -->
 
@@ -41,13 +56,11 @@ I have created four tables out of the datasets:
 
 - `Stations`: Master table of subway stations
 - `Timetables`: Timetable data for each subway station
-- `Populations`: Population data for each 
-- `PassengerSurvey`: Daily usage statistics for each station
+- `Population`: Population data for each 
+- `Passengers`: Daily usage statistics for each station
 
 `Stations`, `Timetables`, `Poplulations` tables represents themselves as dimension tables.
-
-`PassengerSurvey` table is a fact table that shows daily usage of the station.
-This table has `station_id` to join with `Stations`.
+`Passengers` table is a fact table that shows daily usage of the station.
 
 ### Stations
 
@@ -64,6 +77,8 @@ This table has `station_id` to join with `Stations`.
 |---|---|
 | timetable_id | Unique ID for the timetable |
 | station_id | Station ID |
+| direction | Direction |
+| railway | Railway |
 | calendar_type | Calendar type (i.e. Weekday/Holiday) |
 | train_type | Train type (i.e. Local/Express) |
 | departure_time | Departure time of the train |
@@ -75,17 +90,19 @@ This table has `station_id` to join with `Stations`.
 | area_code | Unique code for the area in Tokyo |
 | area_name | Area name in English |
 | area_name_ja | Area name in Japanese |
-| population | Population |
 | daytime_population | Population during daytime |
+| daytime_population_male | Population during daytime (male) |
+| daytime_population_female | Population during daytime (female) |
+| population | Population |
+| population_male | Population (male) |
+| population_female | Population (female) |
 
-### PassengerSurvey
+### Passengers
 
 | Column | Description |
 |---|---|
 | id | Unique ID for the survet result |
 | survey_id | Survey ID |
-| station_id | Station ID |
-| area_code | Area code |
 | year | Year the survey was conducted |
 | passengers | Number of passengers |
 
@@ -93,51 +110,57 @@ This table has `station_id` to join with `Stations`.
 ```mermaid
 erDiagram
 
-Stations ||--o{ PassengerSurvey: ""
+Stations ||--o{ Passengers: ""
 Stations ||--o{ Timetables: ""
 Population ||--o{ Stations: ""
 
-PassengerSurvey {
+Passengers {
   string id
   string survey_id
-  string station_id
   number year
   number passengers
 }
 
 Stations {
+  string id
   string station_id
+  string station_name
+  string zip_code
   string area_code
   string station_code
   string survey_id
-  string station_name
 }
 
 Population {
   string area_code
   string area_name
   string area_name_ja
-  number population
   number daytime_population
+  number daytime_population_male
+  number daytime_population_female
+  number population
+  number population_male
+  number population_female
 }
 
 Timetables {
   string id
-  string station_id
-  string calendar_type
-  string train_type
-  string train_number
+  string timetable_id
+  string direction
+  string railway
+  string station
   string departure_time
+  string train_type
 }
-
-
 ```
+
+### Addressing different scenarios
 
 It’s possible that we will need to address the following issues in the future. Each of them can be addressed differently:
 
 - **If the data was increased by 100x.**
     - I would use Spark for the data processing while the speed would be the biggest concern when it comes to large data size. To address the size issue, I would use data partitioning and parallels.
 - **If the pipelines were run on a daily basis by 7am.**
-    - I would use Airflow to schedule the pipelines. 
+    - I would use Airflow to schedule the pipelines. If it needs to be finished at a particular time based on the business requirements, I would consider speeding up the process through parallel processing.
 - **If the database needed to be accessed by 100+ people.**
     - Providing direct database access to 100+ people is not preferable in terms of convenience and governance. In general, these 100+ people have different reasons and motivations to access database. Instead of providing the access to the data warehouse, I would integrate the data warehouse with BI tools that allow users to create analytics dashboards meet their business needs.

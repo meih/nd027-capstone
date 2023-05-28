@@ -1,0 +1,1323 @@
+[
+  {
+    "@id": "urn:ucode:_00001C0000000000000100000316E943",
+    "@type": "odpt:StationTimetable",
+    "dc:date": "2022-08-01T14:00:00+09:00",
+    "@context": "http://vocab.odpt.org/context_odpt.jsonld",
+    "dct:issued": "2019-12-22",
+    "owl:sameAs": "odpt.StationTimetable:Toei.Arakawa.ArakawaItchumae.Toei.Minowabashi.Holiday",
+    "odpt:railway": "odpt.Railway:Toei.Arakawa",
+    "odpt:station": "odpt.Station:Toei.Arakawa.ArakawaItchumae",
+    "odpt:calendar": "odpt.Calendar:Holiday",
+    "odpt:operator": "odpt.Operator:Toei",
+    "odpt:railDirection": "odpt.RailDirection:Toei.Minowabashi",
+    "odpt:stationTimetableObject": [
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0060",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0060",
+        "odpt:departureTime": "05:44",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0073",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0073",
+        "odpt:departureTime": "05:58",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0118",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0118",
+        "odpt:departureTime": "06:14",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0112",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0112",
+        "odpt:departureTime": "06:26",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0184",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0184",
+        "odpt:departureTime": "06:37",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0140",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0140",
+        "odpt:departureTime": "06:50",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0286",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0286",
+        "odpt:departureTime": "06:57",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0189",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0189",
+        "odpt:departureTime": "07:07",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0242",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0242",
+        "odpt:departureTime": "07:20",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0391",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0391",
+        "odpt:departureTime": "07:28",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0302",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0302",
+        "odpt:departureTime": "07:39",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0496",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0496",
+        "odpt:departureTime": "07:48",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0368",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0368",
+        "odpt:departureTime": "07:54",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0428",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0428",
+        "odpt:departureTime": "08:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0482",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0482",
+        "odpt:departureTime": "08:16",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0671",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0671",
+        "odpt:departureTime": "08:22",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0546",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0546",
+        "odpt:departureTime": "08:27",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0719",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0719",
+        "odpt:departureTime": "08:33",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0598",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0598",
+        "odpt:departureTime": "08:39",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0637",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0637",
+        "odpt:departureTime": "08:48",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0693",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0693",
+        "odpt:departureTime": "08:58",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0739",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0739",
+        "odpt:departureTime": "09:06",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5246",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5246",
+        "odpt:departureTime": "09:12",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0784",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0784",
+        "odpt:departureTime": "09:18",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0827",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0827",
+        "odpt:departureTime": "09:25",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0874",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0874",
+        "odpt:departureTime": "09:33",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0914",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0914",
+        "odpt:departureTime": "09:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5250",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5250",
+        "odpt:departureTime": "09:46",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT0956",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT0956",
+        "odpt:departureTime": "09:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1003",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1003",
+        "odpt:departureTime": "10:01",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5252",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5252",
+        "odpt:departureTime": "10:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1042",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1042",
+        "odpt:departureTime": "10:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1084",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1084",
+        "odpt:departureTime": "10:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1117",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1117",
+        "odpt:departureTime": "10:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1141",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1141",
+        "odpt:departureTime": "10:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1174",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1174",
+        "odpt:departureTime": "10:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1190",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1190",
+        "odpt:departureTime": "10:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1217",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1217",
+        "odpt:departureTime": "10:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT1244",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT1244",
+        "odpt:departureTime": "10:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5256",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5256",
+        "odpt:departureTime": "10:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5262",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5262",
+        "odpt:departureTime": "11:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5266",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5266",
+        "odpt:departureTime": "11:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5270",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5270",
+        "odpt:departureTime": "11:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5274",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5274",
+        "odpt:departureTime": "11:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5278",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5278",
+        "odpt:departureTime": "11:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5282",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5282",
+        "odpt:departureTime": "11:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5286",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5286",
+        "odpt:departureTime": "11:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5290",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5290",
+        "odpt:departureTime": "11:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5294",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5294",
+        "odpt:departureTime": "11:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5298",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5298",
+        "odpt:departureTime": "11:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5302",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5302",
+        "odpt:departureTime": "12:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5306",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5306",
+        "odpt:departureTime": "12:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5310",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5310",
+        "odpt:departureTime": "12:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5314",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5314",
+        "odpt:departureTime": "12:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5318",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5318",
+        "odpt:departureTime": "12:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5322",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5322",
+        "odpt:departureTime": "12:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5326",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5326",
+        "odpt:departureTime": "12:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5330",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5330",
+        "odpt:departureTime": "12:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5334",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5334",
+        "odpt:departureTime": "12:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5338",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5338",
+        "odpt:departureTime": "12:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5342",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5342",
+        "odpt:departureTime": "13:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5346",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5346",
+        "odpt:departureTime": "13:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5350",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5350",
+        "odpt:departureTime": "13:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5354",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5354",
+        "odpt:departureTime": "13:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5358",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5358",
+        "odpt:departureTime": "13:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5362",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5362",
+        "odpt:departureTime": "13:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5366",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5366",
+        "odpt:departureTime": "13:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5370",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5370",
+        "odpt:departureTime": "13:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5374",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5374",
+        "odpt:departureTime": "13:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5378",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5378",
+        "odpt:departureTime": "13:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5382",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5382",
+        "odpt:departureTime": "14:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5386",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5386",
+        "odpt:departureTime": "14:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5390",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5390",
+        "odpt:departureTime": "14:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5394",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5394",
+        "odpt:departureTime": "14:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5398",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5398",
+        "odpt:departureTime": "14:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5402",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5402",
+        "odpt:departureTime": "14:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5406",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5406",
+        "odpt:departureTime": "14:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5410",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5410",
+        "odpt:departureTime": "14:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5414",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5414",
+        "odpt:departureTime": "14:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5418",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5418",
+        "odpt:departureTime": "14:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5422",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5422",
+        "odpt:departureTime": "15:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5426",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5426",
+        "odpt:departureTime": "15:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5430",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5430",
+        "odpt:departureTime": "15:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5434",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5434",
+        "odpt:departureTime": "15:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5438",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5438",
+        "odpt:departureTime": "15:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5442",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5442",
+        "odpt:departureTime": "15:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5446",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5446",
+        "odpt:departureTime": "15:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5450",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5450",
+        "odpt:departureTime": "15:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT5453",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT5453",
+        "odpt:departureTime": "15:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2231",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2231",
+        "odpt:departureTime": "15:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2255",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2255",
+        "odpt:departureTime": "16:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2281",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2281",
+        "odpt:departureTime": "16:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2304",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2304",
+        "odpt:departureTime": "16:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2335",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2335",
+        "odpt:departureTime": "16:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2359",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2359",
+        "odpt:departureTime": "16:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2384",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2384",
+        "odpt:departureTime": "16:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2409",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2409",
+        "odpt:departureTime": "16:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2434",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2434",
+        "odpt:departureTime": "16:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2462",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2462",
+        "odpt:departureTime": "16:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2489",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2489",
+        "odpt:departureTime": "16:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2509",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2509",
+        "odpt:departureTime": "17:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2541",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2541",
+        "odpt:departureTime": "17:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2568",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2568",
+        "odpt:departureTime": "17:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2594",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2594",
+        "odpt:departureTime": "17:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2622",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2622",
+        "odpt:departureTime": "17:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2650",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2650",
+        "odpt:departureTime": "17:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2675",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2675",
+        "odpt:departureTime": "17:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2703",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2703",
+        "odpt:departureTime": "17:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2726",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2726",
+        "odpt:departureTime": "17:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2752",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2752",
+        "odpt:departureTime": "17:59",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2780",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2780",
+        "odpt:departureTime": "18:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2807",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2807",
+        "odpt:departureTime": "18:11",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2835",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2835",
+        "odpt:departureTime": "18:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2864",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2864",
+        "odpt:departureTime": "18:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2888",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2888",
+        "odpt:departureTime": "18:29",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2912",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2912",
+        "odpt:departureTime": "18:35",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2943",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2943",
+        "odpt:departureTime": "18:41",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2969",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2969",
+        "odpt:departureTime": "18:47",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT2997",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT2997",
+        "odpt:departureTime": "18:53",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3033",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3033",
+        "odpt:departureTime": "19:00",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3072",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3072",
+        "odpt:departureTime": "19:08",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3116",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3116",
+        "odpt:departureTime": "19:17",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3147",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3147",
+        "odpt:departureTime": "19:24",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3182",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3182",
+        "odpt:departureTime": "19:31",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3210",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3210",
+        "odpt:departureTime": "19:38",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3243",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3243",
+        "odpt:departureTime": "19:46",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3274",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3274",
+        "odpt:departureTime": "19:54",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3331",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3331",
+        "odpt:departureTime": "20:06",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3369",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3369",
+        "odpt:departureTime": "20:14",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3394",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3394",
+        "odpt:departureTime": "20:21",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3424",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3424",
+        "odpt:departureTime": "20:28",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3455",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3455",
+        "odpt:departureTime": "20:36",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3495",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3495",
+        "odpt:departureTime": "20:46",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3543",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3543",
+        "odpt:departureTime": "20:57",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3580",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3580",
+        "odpt:departureTime": "21:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3613",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3613",
+        "odpt:departureTime": "21:14",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3654",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3654",
+        "odpt:departureTime": "21:23",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3723",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3723",
+        "odpt:departureTime": "21:40",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3788",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3788",
+        "odpt:departureTime": "21:55",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3829",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3829",
+        "odpt:departureTime": "22:05",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3863",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3863",
+        "odpt:departureTime": "22:15",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3896",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3896",
+        "odpt:departureTime": "22:25",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3955",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3955",
+        "odpt:departureTime": "22:44",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT3997",
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT3997",
+        "odpt:departureTime": "22:56",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      },
+      {
+        "odpt:train": "odpt.Train:Toei.Arakawa.ODPT4044",
+        "odpt:isLast": true,
+        "odpt:trainType": "odpt.TrainType:Toei.Local",
+        "odpt:trainNumber": "ODPT4044",
+        "odpt:departureTime": "23:10",
+        "odpt:destinationStation": [
+          "odpt.Station:Toei.Arakawa.Minowabashi"
+        ]
+      }
+    ]
+  }
+]
