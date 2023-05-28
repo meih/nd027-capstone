@@ -50,7 +50,7 @@ Here is the list of datasets that I use in this project. Since two different org
 | PassengerSurvey_metro.json | JSON | 6,103 | Public Transportation Open Data |
 | DynamicPopulation.csv | CSV | 80 | Tokyo Open Data |
     
-### Data Dictionary
+### Data Models
 
 I have created four tables out of the datasets:
 
@@ -62,16 +62,22 @@ I have created four tables out of the datasets:
 `Stations`, `Timetables`, `Poplulations` tables represents themselves as dimension tables.
 `Passengers` table is a fact table that shows daily usage of the station.
 
-### Stations
+Since `Stations` exists between `Passengers` and `Population` or `Timetables`, single join is not enough to associate the fact and dimension tables, thus this will be a Snowflake schema, which is not as simple as Star schema. However, I chose the schema because we thought it was natural to place stations at the center of the data.
+
+### Data Dictionary
+
+#### Stations
 
 | Column | Description |
 |---|---|
 | station_id | Unique ID for the station |
-| area_code | Area code |
-| station_code | Station code |
 | station_name | Name of the station |
+| zip_code | Zip code |
+| station_code | Station code |
+| area_code | Area code (to join with Population table) |
+| survey_id | Survey ID (to join with Passengers table) |
 
-### Timetables
+#### Timetables
 
 | Column | Description |
 |---|---|
@@ -83,7 +89,7 @@ I have created four tables out of the datasets:
 | train_type | Train type (i.e. Local/Express) |
 | departure_time | Departure time of the train |
 
-### Population
+#### Population
 
 | Column | Description |
 |---|---|
@@ -97,7 +103,7 @@ I have created four tables out of the datasets:
 | population_male | Population (male) |
 | population_female | Population (female) |
 
-### Passengers
+#### Passengers
 
 | Column | Description |
 |---|---|
@@ -114,13 +120,6 @@ Stations ||--o{ Passengers: ""
 Stations ||--o{ Timetables: ""
 Population ||--o{ Stations: ""
 
-Passengers {
-  string id
-  string survey_id
-  number year
-  number passengers
-}
-
 Stations {
   string id
   string station_id
@@ -129,6 +128,16 @@ Stations {
   string area_code
   string station_code
   string survey_id
+}
+
+Timetables {
+  string id
+  string timetable_id
+  string direction
+  string railway
+  string station
+  string departure_time
+  string train_type
 }
 
 Population {
@@ -143,14 +152,11 @@ Population {
   number population_female
 }
 
-Timetables {
+Passengers {
   string id
-  string timetable_id
-  string direction
-  string railway
-  string station
-  string departure_time
-  string train_type
+  string survey_id
+  number year
+  number passengers
 }
 ```
 
