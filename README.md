@@ -41,9 +41,9 @@ Here is the list of datasets that I use in this project. Since two different org
 | File name | Format | # of lines | Provided by |
 |--|--|--|--|
 | ZipTokyo.csv | CSV | 4,047 | Japan Post Holdings |
-| Stations_addresses.csv | CSV | 10,886 | Ekidata |
-| Stations_toei.json | JSON | 4,121 | Public Transportation Open Data |
-| Stations_metro.json | JSON | 6,166 | Public Transportation Open Data |
+| StationAddresses.csv | CSV | 10,886 | Ekidata |
+| Station_toei.json | JSON | 4,121 | Public Transportation Open Data |
+| Station_metro.json | JSON | 6,166 | Public Transportation Open Data |
 | StationTimetable_toei.json | JSON | 1,024,605 | Public Transportation Open Data |
 | StationTimetable_metro.json | JSON | 1,431,441 | Public Transportation Open Data |
 | PassengerSurvey_toei.json | JSON | 4,405 | Public Transportation Open Data |
