@@ -250,6 +250,8 @@ def data_check(spark):
     Returns:
         None
     """
+    global checks
+    
     for check in checks:
         test_sql = check['test_sql']
         expected_result = check['expected_result']
