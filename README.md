@@ -21,6 +21,7 @@ Since timetables have a large amount of data, I chose Spark to process them, and
 - etl/
   - etl.py : The main ETL script. It builds data models from the datasets and save them into parquet files
   - helpers.py : File paths and data checks
+  - sample_queries.py : Sample queries against created parquet files
   - config.ini : Definition and files and directories used
 - data/ : Directory for datasets to be processed
 - parquet/ : Directory for parquet files
@@ -158,6 +159,85 @@ Passengers {
   number year
   number passengers
 }
+```
+
+### Example queries
+
+Here are example queries that can be run against the created tables:
+
+#### Query 1: Top 10 areas that have most subway stations
+
+```sql
+SELECT
+    stations.area_code,
+    stations.area_name,
+    count(*) n_stations
+FROM population
+LEFT JOIN stations ON stations.area_code = population.area_code
+GROUP BY population.area_code, population.area_name
+ORDER BY n_stations DESC
+LIMIT 10
+```
+
+#### Result of Query 1
+
+```
++---------+-----------+----------+
+|area_code|  area_name|n_stations|
++---------+-----------+----------+
+|    13101| Chiyoda-ku|       125|
+|    13104|Shinjuku-ku|        94|
+|    13103|  Minato-ku|        76|
+|    13113| Shibuya-ku|        52|
+|    13102|    Chuo-ku|        52|
+|    13116| Toshima-ku|        42|
+|    13106|   Taito-ku|        39|
+|    13108|    Koto-ku|        28|
+|    13105|  Bunkyo-ku|        27|
+|    13120|  Nerima-ku|        26|
++---------+-----------+----------+
+```
+
+#### Query 2: Top 10 areas with the largest day/night population differences, with the number of passengers in 2021
+
+```sql
+WITH population_summary AS (
+  SELECT
+      area_code,
+      area_name,
+      daytime_population - population population_diff
+  FROM population
+  ORDER BY population_diff DESC
+  LIMIT 10
+)
+SELECT
+  population_summary.area_code,
+  population_summary.area_name,
+  population_diff,
+  SUM(passengers)
+FROM population_summary
+LEFT JOIN stations ON population_summary.area_code = stations.area_code
+LEFT JOIN passengers ON stations.survey_id = passengers.survey_id
+WHERE passengers.year = '2021'
+GROUP BY population_summary.area_code, population_summary.area_name, population_diff
+ORDER BY population_summary.population_diff DESC
+```
+
+#### Result of Query 2
+
+```
++---------+------------+---------------+---------------+
+|area_code|   area_name|population_diff|sum(passengers)|
++---------+------------+---------------+---------------+
+|    13101|  Chiyoda-ku|       794662.0|       11911806|
+|    13103|   Minato-ku|       697502.0|        3627099|
+|    13102|     Chuo-ku|       467420.0|        3610300|
+|    13104| Shinjuku-ku|       441989.0|        5397892|
+|    13113|  Shibuya-ku|       314576.0|       15558112|
+|    13109|Shinagawa-ku|       157167.0|         324236|
+|    13105|   Bunkyo-ku|       126408.0|         987715|
+|    13116|  Toshima-ku|       125979.0|       11274526|
++---------+------------+---------------+---------------+
 ```
 
 ### Addressing different scenarios

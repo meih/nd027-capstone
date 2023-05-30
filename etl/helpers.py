@@ -20,7 +20,7 @@ zip_code_file = input_dir + conf['DATA']['ZIP_CODE']
 # parquet files (output)
 stations_parquet = output_dir + 'stations'
 timetables_parquet = output_dir + 'timetables'
-population_parquet = output_dir + 'stations'
+population_parquet = output_dir + 'population'
 passengers_parquet = output_dir + 'passengers'
 
 # data check conditions

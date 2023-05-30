@@ -86,7 +86,7 @@ def process_station_data(spark):
     print(stations_table.count())
 
     # Write data into parquet files
-    df_station.write.mode("overwrite").parquet(stations_parquet)
+    stations_table.write.mode("overwrite").parquet(stations_parquet)
 
     
 def process_timetable_data(spark):
