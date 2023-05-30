@@ -32,6 +32,12 @@ To run the ETL script, run the following command:
 python etl.py
 ```
 
+Once the ETL script has successfully run and parquet files have been generated, run the following command to execute sample queries:
+
+```
+python sample_queries.py
+```
+
 ## Data description
 <!-- Describe the data sets you're using. Where did it come from? What type of information is included? -->
 
